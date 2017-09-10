@@ -5,6 +5,7 @@
             "id" : 100001,
             "ppm" : "74", 
             "characteristics" : [
+
                 { "name" : "M", "value" : "6\"" },
                 { "name" : "WS", "value" : "2+" },
                 { "name" : "BS", "value" : "2+" },
@@ -22,24 +23,50 @@
             "name" : "Tactical Squad",
             "id" : 100002,
             "ppm" : "13",
+            "powerLevel" : "5",
             "characteristics" : [
-                { "name" : "M", "value" : "6\"" },
-                { "name" : "WS", "value" : "3+" },
-                { "name" : "BS", "value" : "3+" },
-                { "name" : "S", "value" : "4" },
-                { "name" : "T", "value" : "4" },
-                { "name" : "W", "value" : "1" },
-                { "name" : "A", "value" : "1" },
-                { "name" : "L", "value" : "7" },
-                { "name" : "Sv", "value" : "3+" }
+                {
+                    "name" : "Space Marine",
+                    "profile" : [
+                        { "name" : "M", "value" : "6\"" },
+                        { "name" : "WS", "value" : "3+" },
+                        { "name" : "BS", "value" : "3+" },
+                        { "name" : "S", "value" : "4" },
+                        { "name" : "T", "value" : "4" },
+                        { "name" : "W", "value" : "1" },
+                        { "name" : "A", "value" : "1" },
+                        { "name" : "L", "value" : "7" },
+                        { "name" : "Sv", "value" : "3+" }
+                    ]
+                },
+                {
+                    "name" : "Space Marine Sergeant",
+                    "profile" : [
+                        { "name" : "M", "value" : "6\"" },
+                        { "name" : "WS", "value" : "3+" },
+                        { "name" : "BS", "value" : "3+" },
+                        { "name" : "S", "value" : "4" },
+                        { "name" : "T", "value" : "4" },
+                        { "name" : "W", "value" : "1" },
+                        { "name" : "A", "value" : "1" },
+                        { "name" : "L", "value" : "7" },
+                        { "name" : "Sv", "value" : "3+" }
+                    ]
+                }
             ],
             "wargear" : [ 200001, 200002, 200003, 200004],
-            "rules" : [ 300001, 300002]
+            "rules" : [ 300001, 300002],
+            "wargearOptions" : [
+                "The Space Marine Sergeant may replace his bolt pistol and boltgun with items from the Sergeant Equipment list.",
+                "If the unit contains fewer than ten models, one Space Marine may replace his boltgun with an item from the Special Weapons or Heavy Weapons list.",
+                "If the unit contains ten models, one Space Marine may replace his boltgun with an item from the Special Weapons list and one other Space Marine may replace his boltgun with an item from the Heavy Weapons list."
+            ],
+            "composition" : "This unit contains 1 Space Marine Sergeant and 4 Space Marines. It can include up to 5 additional Space Marines (Power Rating +4). Each model is armed with a boltgun, bolt pistol, frag grenades and krak grenades."
         }
     ],
     "wargear" : [
         {
-            "name" : "boltgun",
+            "name" : "Boltgun",
             "id" : 200001,
             "cost" : "0",
             "characteristics" : [
@@ -52,7 +79,7 @@
             ]
         },
         {
-            "name" : "bolt pistol",
+            "name" : "Bolt pistol",
             "id" : 200002,
             "cost" : "0",
             "characteristics" : [
@@ -65,7 +92,7 @@
             ]
         },
         {
-            "name" : "frag grenade",
+            "name" : "Frag grenade",
             "id" : 200003,
             "cost" : "0",
             "characteristics" : [
@@ -78,7 +105,7 @@
             ]
         },
         {
-            "name" : "krak grenade",
+            "name" : "Krak grenade",
             "id" : 200004,
             "cost" : "0",
             "characteristics" : [
@@ -88,6 +115,15 @@
                 { "name" : "AP", "value" : "-1" },
                 { "name" : "D", "value" : "D3" },
                 { "name" : "Abilities", "value" : "" }
+            ]
+        }
+    ],
+    "wargearLists" : [
+        {
+            "name" : "Sergeant Equipment",
+            "id" : 400001,
+            "listContent" : [
+
             ]
         }
     ],

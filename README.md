@@ -26,8 +26,10 @@ Data format:
                 name
                 id
                 ppm
-                charcteristics
+                characteristics
                     characteristic entry
+                wargear
+                wargearOptions
         wargear
             wargear entry
                 name
@@ -35,6 +37,11 @@ Data format:
                 pts
                 characteristics
                     characteristic entry
+        wargearLists
+            list entry
+                name
+                id
+                listContent
         rules
             rule entry
                 name
