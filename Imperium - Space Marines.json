@@ -1,3 +1,106 @@
 {
-    
+    "units" : [
+        {
+            "name" : "Captain",
+            "id" : 100001,
+            "ppm" : "74", 
+            "characteristics" : [
+                { "name" : "M", "value" : "6\"" },
+                { "name" : "WS", "value" : "2+" },
+                { "name" : "BS", "value" : "2+" },
+                { "name" : "S", "value" : "4" },
+                { "name" : "T", "value" : "4" },
+                { "name" : "W", "value" : "5" },
+                { "name" : "A", "value" : "4" },
+                { "name" : "L", "value" : "9" },
+                { "name" : "Sv", "value" : "3+" }
+            ],
+            "wargear" : [],
+            "rules" : []
+        },
+        {
+            "name" : "Tactical Squad",
+            "id" : 100002,
+            "ppm" : "13",
+            "characteristics" : [
+                { "name" : "M", "value" : "6\"" },
+                { "name" : "WS", "value" : "3+" },
+                { "name" : "BS", "value" : "3+" },
+                { "name" : "S", "value" : "4" },
+                { "name" : "T", "value" : "4" },
+                { "name" : "W", "value" : "1" },
+                { "name" : "A", "value" : "1" },
+                { "name" : "L", "value" : "7" },
+                { "name" : "Sv", "value" : "3+" }
+            ],
+            "wargear" : [ 200001, 200002, 200003, 200004],
+            "rules" : [ 300001, 300002]
+        }
+    ],
+    "wargear" : [
+        {
+            "name" : "boltgun",
+            "id" : 200001,
+            "cost" : "0",
+            "characteristics" : [
+                { "name" : "Range", "value" : "24\"" },
+                { "name" : "Type", "value" : "Rapid Fire 1" },
+                { "name" : "S", "value" : "4" },
+                { "name" : "AP", "value" : "0" },
+                { "name" : "D", "value" : "1" },
+                { "name" : "Abilities", "value" : "" }
+            ]
+        },
+        {
+            "name" : "bolt pistol",
+            "id" : 200002,
+            "cost" : "0",
+            "characteristics" : [
+                { "name" : "Range", "value" : "12\"" },
+                { "name" : "Type", "value" : "Pistol 1" },
+                { "name" : "S", "value" : "4" },
+                { "name" : "AP", "value" : "0" },
+                { "name" : "D", "value" : "1" },
+                { "name" : "Abilities", "value" : "" }
+            ]
+        },
+        {
+            "name" : "frag grenade",
+            "id" : 200003,
+            "cost" : "0",
+            "characteristics" : [
+                { "name" : "Range", "value" : "6\"" },
+                { "name" : "Type", "value" : "Grenade D6" },
+                { "name" : "S", "value" : "3" },
+                { "name" : "AP", "value" : "0" },
+                { "name" : "D", "value" : "1" },
+                { "name" : "Abilities", "value" : "" }
+            ]
+        },
+        {
+            "name" : "krak grenade",
+            "id" : 200004,
+            "cost" : "0",
+            "characteristics" : [
+                { "name" : "Range", "value" : "6\"" },
+                { "name" : "Type", "value" : "Grenade 1" },
+                { "name" : "S", "value" : "6" },
+                { "name" : "AP", "value" : "-1" },
+                { "name" : "D", "value" : "D3" },
+                { "name" : "Abilities", "value" : "" }
+            ]
+        }
+    ],
+    "rules" : [
+        {
+            "name" : "And They Shall Know No Fear",
+            "id" : 300001,
+            "description" : "You can re-roll failed Morale tests for this unit."
+        },
+        {
+            "name" : "Combat Squads",
+            "id" : 300002,
+            "description" : "Before any models are deployed at the start of the game, a Tactical Squad containing 10 models may be split into two units, each containing 5 models."
+        }
+    ]
 }
